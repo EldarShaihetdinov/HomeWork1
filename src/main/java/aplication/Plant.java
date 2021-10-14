@@ -1,28 +1,19 @@
 package aplication;
 
-public class Plant {
-    private final PotColor potColor;
-    private int waterLevel;
+public abstract class Plant {
 
-    public Plant(PotColor potColor, int waterLevel) {
-        this.potColor = potColor;
-        this.waterLevel = waterLevel;
+    private final Color Color;
+
+    protected Plant(Color Color) {
+        this.Color = Color;
     }
 
-    public int getWaterLevel() {
-        return waterLevel;
-    }
-
-    public void setWaterLevel(int waterLevel) {
-        this.waterLevel = waterLevel;
-    }
 
     public void grow() {
-        System.out.println("Я расту ");
+
     }
 
-    public void drinkWater() {
-        System.out.println("Я больше не пью ");
-    }
+    public void showWaterLevel() {
 
+    }
 }

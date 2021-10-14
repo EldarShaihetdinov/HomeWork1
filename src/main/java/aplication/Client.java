@@ -2,18 +2,19 @@ package aplication;
 
 public class Client {
     public static void main(String[] args) {
-    Flower flower0 = new Flower(PotColor.BLUE,"Кактус", 3);
-    Plant flower1 = new Flower(PotColor.WHITE,"Ромашка",10);
-    Flower flower2 = new Flower(PotColor.YELLOW,"Подсолнух",2);
-    flower0.grow();
-    flower0.drinkWater();
-    flower0.grow();
-    flower0.drinkWater();
+        Flower flower0 = new Flower(Color.WHITE, "Ромашка", 10);
+        Flower flower1 = new Flower(Color.BLUE, "Роза", 8);
+        Flower flower2 = new Flower(Color.GREEN, "Кактус", 4);
 
-
-
-
-
+        flower0.grow();
+        flower0.showWaterLevel();
+        flower0.drinkWater();
+        flower0.showWaterLevel();
+        flower1.grow();
+        flower1.showWaterLevel();
+        flower2.grow();
+        flower2.showWaterLevel();
+        flower2.drinkWater();
+        flower2.showWaterLevel();
     }
-
 }
